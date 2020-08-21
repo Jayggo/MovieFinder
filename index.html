@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!---------------------HEADER & NAV--------------------->
+
+    <header class = "navbar navbar-light fixed-top" style= "background: #6985AB"> 
+       
+        <a href="index.html" class = "navbar-brand">MovieFinder</a>
+        <form class = "form-inline">
+            <input type="search" class = "form-control" placeholder="Search a movie...">
+            <button class = "btn btn-outline-dark ml-2 mr-2"><i class = "fa fa-search"></i></button>
+        </form>
+    </header>
+
+      <nav class = "nav-left">
+        <div class = "d-flex align-items-center lead" style= "width: 9rem; height: 80vh;">
+
+          <ul class = "nav flex-column d-flex justify-content-around" style   ="flex-basis: 100%;height: 60%; border-radius: 5px; border: 1px solid black; background:rgba(105,133,171,.7);">
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Genre</a></li>
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Year</a></li>
+
+            <li class = "nav-item d-flex justify-content-between"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Movies</a>
+              <div class ="p-2 text-white d-inline close-button my-auto" style = "border-radius: 20px"><i class = "fa fa-angle-double-left"></i>
+              </div>
+            </li>
+
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Series</a></li>
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Anime</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class = "open-container">
+      <div  class = "fixed-top d-flex align-items-center lead" style= "width: 7%; height: 80vh; margin-top:5em;">
+      <div class ="p-3 bg-dark text-white open-button" style = "border-radius: 30px;"><i class = "fa fa-angle-double-right"></i></div>
+      </div>
+    </div>
+
+
+    
+    <!---------------------MAIN--------------------->
+
+
+    <main>
+
+        <div class = "main-movie" style = "height:600px; background-image: url(https://areajugones.sport.es/wp-content/uploads/2020/06/interstellar.jpg); background-position-y: bottom;">
+
+         <div class = "d-flex flex-column justify-content-between h-100 p-3" style = "background :rgba(0,0,0,0.3)">
+
+            <div>
+                <h1 class = "mb-4 text-white">Interstellar</h1>
+                <p class = "text-white">
+                    <span class = "bg-dark p-1">11/10 iMDB</span>
+                    <span class = "bg-dark p-1">169min</span>
+                    <span class = "bg-dark p-1">2014</span>
+                    <span class = "bg-dark p-1">Drama, Sci-Fi</span>
+                </p>
+            </div>
+
+
+            <div>
+                <p class = "text-white lead">In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.
+                </p>
+    
+                <a href="interstellar.html" class = "btn btn-outline-light">More info</a>
+            </div>
+
+         </div>  
+        </div>
+
+        <div class = "main-wrapper row p-3">
+            
+            <!---------------------MAIN-MOVIES--------------------->
+
+            <div class = "col-md-6 p-3" style = "background: rgba(0,0,0,0.3); border-right: 1px solid black;">
+
+                <h2 class = "mb-5 d-inline-block p-2 text-white" style = "background: rgba(0,0,0,0.5); border-radius: 5px; text-align: center; width: 100%;">Latest Movies</h2>
+
+                <div class = "movies-container ">
+
+                <div class="card" style="width: 20rem;background: rgba(105,133,171,.6);">
+                  <a href="" class = "card-link">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/5e1730db279cdfd96ea241cedffd81a4_216b04df-f0ee-4379-b3d9-0dd0a4f0fba0.jpg?v=1573584681" class="card-img-top" alt="the-wolf-of-wallstreet">
+                  </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <h4 class="card-title">The Wolf of Wall Street</h4>
+                      <p style = "font-size: 0.8em; color:white;">
+                        <span class = "bg-dark p-1">11/10 IMDB</span>
+                        <span class = "bg-dark p-1">180min</span>
+                        <span class = "bg-dark p-1">Drama, Real Life</span>
+                        </p>
+                      <p class="card-text lead">
+                        Jordan Belfort, a New York stockbroker who founded the Stratton Oakmont company in his early twenties, develops habits of excess and corruption.</p>
+                        <a href="#" class="btn btn-dark d-block">Watch it!</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 20rem; background:rgba(171,143,105,0.5);">
+                    <a href="" class = "card-link">
+                    <img src="https://www.gannett-cdn.com/presto/2019/03/21/USAT/d3d5fbc7-202f-4d6b-b65e-666df8e4691b-1TomHanks_ForrestGump.JPG" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover;">
+                  </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Forrest Gump</h4>
+                      <p style = "font-size: 0.8em; color:white;">
+                        <span class = "bg-dark p-1">11/10 IMDB</span>
+                        <span class = "bg-dark p-1">180min</span>
+                        <span class = "bg-dark p-1">Drama, Real Life</span></p>
+                      <p class="card-text lead">
+                        The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75. </p>
+                      <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                    </div>
+                  </div>
+
+                  
+                  <div class="card" style="width: 20rem;background:rgba(105,133,171,.6); ">
+                    <a href="" class = "card-link">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/108b520c55e3c9760f77a06110d6a73b_e97cf224-d57f-44e3-8477-4f5479cd746b.jpg?v=1573616089" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover;">
+                  </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Avengers: Endgame</h4>
+                      <p style = "font-size: 0.8em; color:white;">
+                        <span class = "bg-dark p-1">11/10 IMDB</span>
+                        <span class = "bg-dark p-1">181min</span>
+                        <span class = "bg-dark p-1">Sci-fi, Action</span></p>
+                      <p class="card-text lead">
+                        The remaining Avengers must find a way to win back their allies for an epic showdown with Thanos, the villain who decimated the planet and the universe.</p>
+                      <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="width: 20rem;background:rgba(171,143,105,0.5); ">
+                    <a href="" class = "card-link">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/5cae019e64c0ee10ead36a00e60f0137_eeb2d749-fdbe-46fd-978a-870cc7e0ddf7.jpg?v=1573593942" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover;">
+                  </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <h4 class="card-title">Joker</h4>
+                      <p style = "font-size: 0.8em; color:white;">
+                        <span class = "bg-dark p-1">11/10 IMDB</span>
+                        <span class = "bg-dark p-1">122min</span>
+                        <span class = "bg-dark p-1">Drama, Action</span></p>
+                      <p class="card-text lead">
+                        Arthur Fleck loves to make people laugh, but his career as a comedian is a failure. Social repudiation and a series of tragic events lead him down the path of madness and, finally, he falls into the world of crime.
+                      </p>
+                      <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                </div>
+            </div>
+            
+
+
+            <!---------------------MAIN-SERIES--------------------->
+
+            <div class = "col-md-6 p-3" style = "background: rgba(0,0,0,0.3);">
+                 <h2 class = "mb-5 text-center p-2 text-white" style = "background: rgba(0,0,0,0.5); border-radius: 5px; text-align: center; width: 100%;">Latest Series</h2>
+
+                 <div class = "series-container">
+                    <div class="card" style="width: 20rem;background: rgba(105,133,171,.6);">
+                      <a href="" class = "card-link">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/ab3357a4bd3c7c427a75931931714cbc_d592e540-4470-495b-950d-5c2091df9efc.jpg?v=1573587265" class="card-img-top" alt="game-of-thrones" style= "height: 397.5px; object-fit: cover;">
+                      </a>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h4 class="card-title">Game of Thrones</h4>
+                          <p style = "font-size: 0.8em; color:white;">
+                            <span class = "bg-dark p-1">11/10 IMDB</span>
+                            <span class = "bg-dark p-1">8 Seasons</span>
+                            <span class = "bg-dark p-1">Drama, Adventure</span>
+                            </p>
+                          <p class="card-text lead">
+                             The power struggles between the 7 houses of the continent of Westeros, where each one dominates a portion along with its vassals and is ruled by the occupant of the iron throne.
+                          </p>
+                          <a href="#" class="btn btn-dark d-block">Watch it!</a>
+                        </div>
+                      </div>
+    
+                      <div class="card" style="width: 20rem; background:rgba(171,143,105,0.5);">
+                        <a href="" class = "card-link">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/b067ff946bc3789e43362b5933bf45e4_30784dce-27a7-4728-bcc7-34c83238d9ff.jpg?v=1573652438" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover; object-position: center;">
+                      </a>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h4 class="card-title">Breaking Bad</h4>
+                          <p style = "font-size: 0.8em; color:white;">
+                            <span class = "bg-dark p-1">11/10 IMDB</span>
+                            <span class = "bg-dark p-1">5 Seasons</span>
+                            <span class = "bg-dark p-1">Action, Drama</span></p>
+                          <p class="card-text lead">
+                            A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
+                          <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                        </div>
+                      </div>
+    
+                      
+                      <div class="card" style="width: 20rem;background:rgba(105,133,171,.6); ">
+                        <a href="" class = "card-link">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/ce2a1f954f8ed8e583996a6498f131d1_bcab3cd1-ebad-4ae7-9793-a7756aac0877.jpg?v=1573651178" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover;">
+                      </a>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h4 class="card-title">House of Cards</h4>
+                          <p style = "font-size: 0.8em; color:white;">
+                            <span class = "bg-dark p-1">11/10 IMDB</span>
+                            <span class = "bg-dark p-1">6 seasons</span>
+                            <span class = "bg-dark p-1">Drama-Political</span></p>
+                          <p class="card-text lead">
+                            Frank Underwood, a Democrat from South Carolina, after getting passed over for appointment as Secretary of State, decides to exact his revenge on those who betrayed him.</p>
+                          <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                        </div>
+                      </div>
+    
+    
+                      <div class="card" style="width: 20rem;background:rgba(171,143,105,0.5); ">
+                        <a href="" class = "card-link">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/b12a6731e35878c9b560b76efe15e06d.jpg?v=1573572672" class="card-img-top" alt="the-wolf-of-wallstreet" style= "height: 397.5px; object-fit: cover;">
+                      </a>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h4 class="card-title">Stranger Things</h4>
+                          <p style = "font-size: 0.8em; color:white;">
+                            <span class = "bg-dark p-1">11/10 IMDB</span>
+                            <span class = "bg-dark p-1">3 Seasons</span>
+                            <span class = "bg-dark p-1">Sci-fi, Drama</span></p>
+                          <p class="card-text lead">
+                            Hawkins, Indiana, 80's. The mysterious disappearence of Will Byers bring to the town new problems, people and strange events that his friends will investigate. </p>
+                          <a href="#" class="btn btn-dark d-block ">Watch it!</a>
+                        </div>
+                      </div>
+
+                    </div>
+       
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+  <!---------------------FOOTER-------------------->
+
+    <footer class = "p-3" style = "background:#6985AB">
+
+      <div class = " d-flex justify-content-around">
+      <ul class = "nav flex-column">
+        <h2>About us</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link">Contact</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Why MovieFinder?</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Advertising</a></li>
+      </ul>
+
+      <ul class = "nav flex-column text-center">
+        <h2>Social</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-facebook"></i></a></li>
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-twitter"></i></a></li>
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-instagram"></i></a></li>
+      </ul>
+
+      <ul class = "nav flex-column">
+        <h2>Support</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link">FAQ</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Legal</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Services</a></li>
+      </ul>
+    </div>
+
+    <p class = "mb-0 mt-5 text-center">&copy2020 Jairo Gomez All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-------------------------SCRIPTS----------------------->
+    <script src = "script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>

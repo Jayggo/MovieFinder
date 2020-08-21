@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!---------------------HEADER & NAV--------------------->
+
+    <header class = "navbar navbar-light fixed-top" style= "background: #6985AB"> 
+       
+        <a href="index.html" class = "navbar-brand">MovieFinder</a>
+        <form class = "form-inline">
+            <input type="search" class = "form-control" placeholder="Search a movie...">
+            <button class = "btn btn-outline-dark ml-2 mr-2"><i class = "fa fa-search"></i></button>
+        </form>
+    </header>
+
+      <nav class = "nav-left">
+        <div class = "d-flex align-items-center lead" style= "width: 8.5rem; height: 80vh;">
+
+          <ul class = "nav flex-column d-flex justify-content-around" style   ="flex-basis: 100%;height: 60%; border-radius: 5px; border: 1px solid black; background:rgba(105,133,171,.7);">
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Genre</a></li>
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Year</a></li>
+
+            <li class = "nav-item d-flex justify-content-between"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Movies</a>
+              <div class ="p-2 text-white close-button my-auto" style = "border-radius: 20px"><i class = "fa fa-angle-double-left"></i>
+              </div>
+            </li>
+
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Series</a></li>
+            <li class = "nav-item"><a href="" class = "nav-link"><i class = "fa fa-angle-right"></i> Anime</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class = "open-container">
+      <div  class = "fixed-top d-flex align-items-center lead" style= "width: 7%; height: 80vh; margin-top:5em;">
+      <div class ="p-3 bg-dark text-white open-button" style = "border-radius: 30px;"><i class = "fa fa-angle-double-right"></i></div>
+      </div>
+    </div>
+
+
+    
+    <!---------------------MAIN--------------------->
+
+    <main class = "main-wrapper w-85">
+
+      <div class = "main-header p-3 text-white" style = "background: rgba(59,63,64,0.8);">
+          <h3 class = "float-right"><i class = "fa fa-star" style= "color: gold;"></i> 11/10</h3>
+        <h1>Interstellar</h1>
+        <p class = "">169min | Adventure, Sci-fi | 2014</p>
+      </div>   
+      
+      <div class = "main-images" style= "width: 80%; margin: auto;">
+        <div class = "row w-100 m-0">
+
+            <div class = "w-50" style = "height: 400px;">
+                <img src="https://i1.wp.com/contraste.info/desarrollo/wp-content/uploads/2015/08/Interstellar-FichaCine.jpg?fit=1400%2C932&ssl=1" alt="inter-1" style = "width: 100%; height: 100%;">
+            </div>
+            <div class = "w-50" style = "height: 400px;">
+                <img src="https://elcorreoweb.es/binrepository/720x360/22c0/675d360/none/10703/XTFD/escena-de-interestellar-imagen-warner-bros-pictures-1_20413322_20200415162752.jpg" alt="inter-2" style = "width: 100%; height: 100%;">
+            </div>
+
+        </div>
+
+        <div class="row w-100 m-0">
+
+            <div class = "w-50" style = "height: 400px;">
+                <img src="https://pics.filmaffinity.com/Interstellar-872621146-large.jpg" alt="inter-1" style = "width: 100%; height: 100%;">
+            </div>
+            <div class = "w-50" style = "height: 400px;">
+                <img src="https://thefilmstage.com/wp-content/uploads/2015/03/interstellar_1-759x500.png" alt="inter-2" style = "width: 100%; height: 100%;">
+            </div>
+        </div>
+      </div>
+
+      <div style= "width: 80%; margin: auto; background: rgba(59,63,64,0.8);">
+        <p class= "lead p-3 text-white">
+          Thanks to a discovery, a group of scientists and explorers, led by Cooper, embark on a space journey to find a place with the necessary conditions to replace Earth and start a new life there.
+        </p>
+        <p class= "p-3 text-white"><span class = "font-weight-bold">Directed by:</span> Christopher Nolan
+        </p>
+        <p class= "p-3 text-white"><span class = "font-weight-bold">Written by:</span> Christopher Nolan, Jonathan Nolan
+        </p>
+        <p class= "p-3 text-white"><span class = "font-weight-bold">Starring:</span> Matthew McConaughey, Anne Hathaway, Matt Damon, Jessica Chastain, Michael Cain.
+        </p>
+      </div>
+
+      <!-------------SWITCHER---------->
+      
+      <div class = "main-content" style= "width: 80%; margin: auto;">
+
+        <div class = "content-switcher" style = "background:#6985AB ">
+          <ul class = "nav d-flex justify-content-around switcher-list p-3 lead">
+
+            <li class = "nav-item" style = "width: 20%; border-left: 2px solid white;">
+              <div class = "switcher-item item-plot">Plot</div>
+            </li>
+            <li class = "nav-item" style = "width: 20%;">
+              <div class = "switcher-item item-cast">Cast</div>
+            </li>
+            <li class = "nav-item" style = "width: 20%;">
+              <div class = "switcher-item item-rates">Rates</div>
+            </li>
+            <li class = "nav-item" style = "width: 20%;">
+              <div class = "switcher-item item-pictures">Pictures</div>
+            </li>
+            <li class = "nav-item" style = "width: 20%;">
+              <div class = "switcher-item item-trailer">Trailer</div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-----------------CONTENT---------------->
+
+        <div class = "content-container text-white p-3" style = "background: rgba(59,63,64,0.8);">
+
+          <div class="content-plot p-3 text-justify">
+           <p> In 2067, crop blights and dust storms threaten humanity's survival. Corn is the last viable crop. The world also regresses into a post-truth society where younger generations are taught false history, including the faking of the Apollo moon missions. Widowed engineer and former NASA pilot Joseph Cooper is now a farmer. Living with him are his father-in-law, Donald; his 15-year-old son, Tom Cooper, and 10-year-old daughter, Murphy "Murph" Cooper. After a dust storm, strange dust patterns inexplicably appear on Murphy's bedroom floor; she attributes the anomaly to a ghost. Cooper eventually deduces the patterns were caused by gravity variations and that they represent geographic coordinates in binary code. Cooper follows the coordinates to a secret NASA facility headed by Professor John Brand, Cooper's former supervisor. Professor Brand says gravitational anomalies have happened elsewhere. 48 years earlier, unknown beings positioned a wormhole near Saturn, opening a path to a distant galaxy with twelve potentially habitable worlds located near a black hole named Gargantua. Twelve volunteers traveled through the wormhole to individually survey the planets. Astronauts Miller, Edmunds, and Mann reported positive results. Based on their data, Professor Brand conceived two plans to ensure humanity's survival. Plan A involves developing a gravitational propulsion theory to propel colonies into space, while Plan B involves launching the Endurance spacecraft carrying 5,000 frozen human embryos to colonize a habitable planet.</p>
+           <p>           
+           Cooper is recruited to pilot the Endurance. The crew includes scientists Dr. Amelia Brand (Professor Brand's daughter), Dr. Romilly, Dr. Doyle, and robots TARS and CASE. Before leaving, Cooper gives a distraught Murphy his wristwatch to compare their relative time for when he returns. After traversing the wormhole, Romilly studies the black hole while Cooper, Doyle, and Brand descend in a landing craft to investigate Miller's planet, an ocean world. After finding wreckage from Miller's ship, a gigantic tidal wave kills Doyle and delays the lander's departure. Due to the proximity of the black hole, time is severely dilated: as a result, 23 years have elapsed for Romilly on Endurance by the time Cooper and Brand return.
+           </p>
+           <p>
+           Edmunds' planet has slightly better telemetry, while Mann broadcasts positive data. Cooper decides to use their remaining fuel to reach Mann's planet, where they revive him from cryostasis. Meanwhile, Murph, now a scientist working with NASA, transmits a message announcing Professor Brand has died. She has learned that Plan A, which required unattainable data from within a black hole, was never viable. Plan B was always Professor Brand's only option. Murphy accuses Brand and Cooper of knowing that those left on Earth were doomed. Mann's frozen planet is uninhabitable; he had sent falsified data in order to be rescued. Mann attempts to murder Cooper, then escapes in a lander and heads for Endurance. Romilly is killed by a booby trap left by Mann and Brand and Cooper race to the Endurance in another lander. Mann dies during a failed manual docking operation, severely damaging Endurance. After a difficult docking maneuver, Cooper regains control of the damaged but functional Endurance.
+           </p>
+           <p>
+           With insufficient fuel to reach Edmunds' planet, they use a slingshot maneuver so close to Gargantua that time dilation adds another 51 years. In the process, Cooper and TARS jettison themselves to shed weight and ensure Endurance reaches Edmunds' planet. Slipping through the event horizon of Gargantua, they eject from their respective craft and find themselves inside a massive tesseract, constructed by future humans. Across different time periods, Cooper can see through the bookcases of Murphy's old room on Earth and weakly interact with its gravity. Cooper realizes he was Murphy's "ghost" and manipulates the second hand of the wristwatch he gave her, using Morse code to transmit the quantum data that TARS collected from inside the event horizon. Cooper and TARS are ejected from the tesseract. Cooper is picked up and awakens on a space habitat orbiting Saturn, where he reunites with an elderly Murphy. Using the quantum data sent by Cooper, the younger Murphy had solved the gravitational propulsion theory for Plan A, enabling humanity's exodus and survival. Nearing death and with her own family, Murphy urges Cooper to return to Amelia. Cooper and TARS take a spacecraft to rejoin Amelia and CASE on Edmunds' habitable planet.   
+           </p>    
+          </div>
+
+          <div class="content-cast">
+
+           <div class = "" style = "width: 80%; margin: auto;">
+            <ul class="list-group">
+
+              <li class="list-group-item list-group-item-dark d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="matthew" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead text-center">Matthew <br> McConaughey</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://i.pinimg.com/originals/fe/ed/03/feed03078e262309351d1f88c234927a.jpg" alt="matthew" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Cooper</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://bookingagentinfo.com/wp-content/uploads/2020/05/Mackenzie-Foy-Contact-Information.jpg" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Mackenzie Foy</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://vignette.wikia.nocookie.net/chrisnolan/images/6/6b/Young_murph.jpg/revision/latest?cb=20141218021945" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Young Murph</p>
+                </div>
+              </li>
+
+              <li class="list-group-item list-group-item-dark d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvWWgTt-lzXc6wBzB8_mtRtF_7xYkJ5-ouRA&usqp=CAU" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">John Lithgow</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://hobbydb-production.s3.amazonaws.com/processed_uploads/subject_photo/subject_photo/image/40508/1529104966-18138-8526/CHoFo0SUsAAxxe7_large.jpg" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Donald</p>
+                </div>
+
+              </li>
+
+              <li class="list-group-item d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://dam.vanidades.com/wp-content/uploads/2019/01/900anne-hathaway-hollywood-film-770x513.jpg" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Anne Hathaway</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-interstellar-anne-hathaway.jpg" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Amelia Brand</p>
+                </div>
+
+              </li>
+
+              <li class="list-group-item list-group-item-dark d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Sir_Michael_Caine%2C_28th_EFA_Awards_2015%2C_Berlin_%28cropped%29.jpg" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Michael Caine</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://i.pinimg.com/originals/bc/cc/94/bccc94c040a255d86b1c75540237ac76.jpg" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Professor Brand</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://flxt.tmsimg.com/v4/AllPhotos/535891/535891_v4_bc.jpg?w=300" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Timothée Chalamet</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKDBKqju24qCizCyfezr6TV5pESeFWdzF9Kw&usqp=CAU" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover; object-position: center;">
+                  <p class = "lead">Tom</p>
+                </div>
+              </li>
+
+              <li class="list-group-item list-group-item-dark d-flex text-dark justify-content-around align-items-center">
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://vignette.wikia.nocookie.net/americanhorrorstory/images/c/cd/WesBentley2018.jpg/revision/latest/top-crop/width/360/height/360?cb=20180805035434" alt="mackenzie-foy" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Wes Bentley</p>
+                </div>
+
+                <div>
+                  <i class = "fa fa-angle-double-right" style= "font-size: 3.5em"></i>
+                </div>
+
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                  <img class = "" src="https://m.media-amazon.com/images/M/MV5BZTE5OWVlZjItOWM0Yy00ZTY4LTkwMmItMGNhZWM1OTJmMzRmXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg" alt="young-murph" style= "width: 150px; height: 200px; object-fit: cover;">
+                  <p class = "lead">Doyle</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+         </div>
+
+
+          <div class = "content-rates">
+
+            <div>
+              <div class = "d-flex align-items-center m-3">
+                <img src="https://lh3.googleusercontent.com/8Wo6Eg3iUaLAz_tFaxGxW9QP3crthfIxXMILX84FMbQHgXHY2ewxf_lzYhpveG0iJQ" alt="imdb" style = "width: 80px; height: 80px;">
+                <p class = "lead m-3">8.6/10</p>
+              </div>
+
+              <div class = "d-flex align-items-center m-3">
+                <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/31/1501854760-certified-fresh.png?resize=480:*" alt="imdb" style = "width: 80px; height: 80px;">
+                <p class = "lead m-3">72%</p>
+              </div>
+
+              <div class = "d-flex align-items-center m-3">
+                <img src="https://elgazapo.files.wordpress.com/2013/03/filmaffinity.jpg" alt="imdb" style = "width: 80px; height: 80px;">
+                <p class = "lead m-3">7.9/10</p>
+              </div>
+
+              <div class = "d-flex align-items-center m-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Metacritic_logo_original.svg/1200px-Metacritic_logo_original.svg.png" alt="imdb" style = "width: 80px; height: 80px;">
+                <p class = "lead m-3">74</p>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+          <div class="content-pictures">
+
+            <div class = "pictures-grid">
+
+              <div>
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/interstellar-final-explicado-1589395771.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+
+              <div>
+                
+                <img src="https://media.gq.com.mx/photos/5c891f9fcb60c05dc8addfaa/16:9/w_1920,c_limit/Interstellar---RELOJ-Murph.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+              
+              <div>
+                <img src="https://www.vozpopuli.com/2014/11/12/marabilias/cultura/Imagen-pelicula-Interstellar-Gtresonline_752034859_14610477_1280x720.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+              
+              <div>
+                <img src="https://pics.filmaffinity.com/Interstellar-959604606-large.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+              <div>
+                <img src="https://static01.nyt.com/images/2014/11/05/arts/interstellar-1/interstellar-1-videoSixteenByNine3000-v2.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+              <div>
+                <img src="https://www.hamiltonwatch.com/mediam2/wysiwyg/04_Murph-watch.jpg" alt="" style= "height: 600px; width: 900px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+
+          <div class = "content-trailer">
+
+            <div class = "text-center p-3">
+              <iframe id="ytplayer" type="text/html" width="800" height="500"
+              src="http://www.youtube.com/embed/zSWdZVtXT7E"
+              frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!---------------------MORE LIKE THIS--------------------->
+
+      <div class = "suggestions-container mt-5 text-white p-3" style= "width: 80%; margin: auto; background: rgba(59,63,64,0.8);">
+
+        <h4>More like this:</h4>
+            <hr>
+            <div class = "row">
+                <div class="col-sm-3">
+                    <div class="card" style= "background: none;">
+                        <div class="card-body" style = "background: rgba(105,133,171,.6);">
+                          <a href="" class = "text-decoration-none">
+                            <img src="https://pics.filmaffinity.com/Gravity-932329286-large.jpg" alt="" style= "width: 250px; height: 350px; object-fit: cover;">
+                            <h5 class= "" style = "text-align: center; margin-top: 10px; color: #212529;">Gravity</h5></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style= "background: none;">
+                        <div class="card-body" style = "background: rgba(171,143,105,0.4);">
+                          <a href="" class = "text-decoration-none">
+                            <img src="https://cdn-media.festival-cannes.com/film_poster/0001/59/thumb_58432_film_poster_big.jpeg" alt=""  style= "width: 250px; height: 350px; object-fit: cover;">
+                            <h5 style = "color: #212529; text-align: center; margin-top: 10px;">2001: A Space Odyssey</h5></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style= "background: none;">
+                        <div class="card-body" style = "background: rgba(105,133,171,.6);">
+                          <a href="" class = "text-decoration-none">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/c74c06dc65f2f63793c2e90aeb494b8a.jpg?v=1573572646" alt="" style= "width: 250px; height: 350px; object-fit: cover;">
+                            <h5 style = "color: #212529; text-align: center; margin-top: 10px;">Ad Astra</h5></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style= "background: none;">
+                        <div class="card-body" style = "background: rgba(171,143,105,0.4);">
+                          <a href="" class = "text-decoration-none">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Apollo_thirteen_movie.jpg" alt="" style= "width: 250px; height: 350px; object-fit: cover;">
+                            <h5 style = "color: #212529; text-align: center; margin-top: 10px;">Apollo 13</h5></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+
+    </main>
+
+
+  <!---------------------FOOTER-------------------->
+
+    <footer class = "p-3" style = "background:#6985AB">
+
+      <div class = " d-flex justify-content-around">
+      <ul class = "nav flex-column">
+        <h2>About us</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link">Contact</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Why MovieFinder?</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Advertising</a></li>
+      </ul>
+
+      <ul class = "nav flex-column text-center">
+        <h2>Social</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-facebook"></i></a></li>
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-twitter"></i></a></li>
+        <li class = "nav-item"><a href="" class ="nav-link"><i class = "fa fa-instagram"></i></a></li>
+      </ul>
+
+      <ul class = "nav flex-column">
+        <h2>Support</h2>
+
+        <li class = "nav-item"><a href="" class ="nav-link">FAQ</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Legal</a></li>
+        <li class = "nav-item"><a href="" class ="nav-link">Services</a></li>
+      </ul>
+    </div>
+
+    <p class = "mb-0 mt-5 text-center">&copy2020 Jairo Gomez All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-------------------------SCRIPTS----------------------->
+    <script src = "script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>
