@@ -88,24 +88,29 @@ main{
 .movies-container, .series-container{
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, 350px);
     grid-auto-rows: auto;
     gap: 20px;
-    justify-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+
+    margin: 0 auto;
+
 }
 
 
 /*---------------------SWITCHER--------------------*/
 
 .content-switcher .nav-item{
-
     display: block;
     border-right: 2px solid white;
     text-align: center;
 }
 
 .switcher-item:hover{
-
     cursor: pointer;
     color: white !important;
     transition: all .7s !important;
@@ -197,6 +202,15 @@ main{
     opacity: .6 !important;
     transition: all .7s !important;
 
+}
+
+.suggestions-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: auto;
+    gap: 10px;
+    justify-content: center;
 }
 
 
